@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta para el amor de mi vida</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="PlayAudio()">
+  <main>
+    <div class="container-letter">
+      <div class="cover"></div>
+      <span class="heart"> ｡･:*˚:✧｡</span>
+      <p class="paper" id="mainMessage">
+         Contigo entendí que el amor verdadero no se busca,
+          llega en el momento perfecto. Eres mi todo,
+          mi mayor alegría y la razón de mi sonrisa cada día🌠.
+         
+      </p>
+      <div class="letter"></div>
+    </div>
+    <div class="options">
+      <button id="open">Abrir</button>
+      <button id="close">Cerrar</butto>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  
+
+  <audio id="audio" loop>
+    <source src="audio/1.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script>
+      function PlayAudio(){
+        document.getElementById("audio").play();
+      }
+  </script>
+</body>
+</html>
